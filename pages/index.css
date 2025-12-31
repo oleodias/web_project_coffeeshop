@@ -208,3 +208,106 @@
   margin-top: 24px;
   text-align: end;
 }
+
+.reservation {
+  background-image: url(/web_project_coffeeshop/images/background_reservation.svg);
+  background-color: #d9e7ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 944px;
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.reservation__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  position: absolute;
+  top: 100px;
+  display: flex;
+}
+
+.reservation__form {
+  display: flex;
+  justify-content: center;
+}
+
+.form__fieldset {
+  position: absolute;
+  top: 232px;
+  max-width: 385px;
+  box-sizing: border-box;
+}
+
+.form__label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 4px;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 32px;
+}
+
+.form__input::placeholder {
+  color: #838383;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.form__buttons {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__button {
+  border-radius: 4px;
+  height: 60px;
+  width: 100%;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+.form__button--submit:enabled {
+  background: #2f80ed;
+  color: #ffffff;
+}
+
+.form__checkbox {
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__label_type_checkbox {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 32px;
+}
