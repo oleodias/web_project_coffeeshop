@@ -35,27 +35,25 @@
 
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="recipes">Receitas</a>
+              <a class="nav__link" href="#recipes">Receitas</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Reservar uma mesa</a>
+              <a class="nav__link" href="#reservation">Reservar uma mesa</a>
             </li>
             <li>
               <a class="nav__link" href="#">Contatos</a>
             </li>
           </ul>
         </nav>
-        <div class="header__content">
-          <h1 class="header__title">
-            <span>Café especial</span>
-            <span>na biblioteca Triple Peaks</span>
-          </h1>
+        <h1 class="header__title">
+          <span>Café especial</span>
+          <span>na biblioteca Triple Peaks</span>
+        </h1>
 
-          <p class="header__description">
-            Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
-            você e vibrações aconchegantes para soltar a criatividade.
-          </p>
-        </div>
+        <p class="header__description">
+          Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
+          você e vibrações aconchegantes para soltar a criatividade.
+        </p>
 
         <img
           src="/web_project_coffeeshop/images/inside_coffee_shop.png"
@@ -64,24 +62,26 @@
         />
 
         <footer class="header__footer">
-          <ul class="header__hours">
-            <li>Horários:</li>
-            <li>Segunda a sexta (10:00 - 19:00)</li>
-            <li>Sábado a domingo (11:00 - 18:00)</li>
-          </ul>
-          <p class="header__address">
-            200 Success Avenue, a cidade de Triple Peaks
-          </p>
+          <div>
+            <p class="header__paragraph">Horários:</p>
+            <p class="header__paragraph">Segunda a sexta (10:00 - 19:00)</p>
+            <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
+          </div>
+          <div>
+            <p class="header__paragraph">
+              200 Success Avenue, a cidade de Triple Peaks
+            </p>
+          </div>
         </footer>
       </header>
       <main class="content">
         <section class="recipes" id="recipes">
           <div>
             <h2 class="recipes__title">Receitas</h2>
-            <p class="recipes__subtitle-first-part">
+            <p class="recipes__subtitle">
               Confira algumas receitas que coletamos para
             </p>
-            <p class="recipes__subtitle-second-part">seu lanchinho caseiro:</p>
+            <p class="recipes__subtitle">seu lanchinho caseiro:</p>
           </div>
           <ul class="recipes__videos">
             <li class="recipes__item">
@@ -116,7 +116,7 @@
             </li>
           </ul>
         </section>
-        <section class="reservation"></section>
+        <section class="reservation" id="reservation"></section>
       </main>
       <footer class="footer"></footer>
     </div>
