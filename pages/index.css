@@ -229,8 +229,9 @@
   font-size: 44px;
   line-height: 52px;
   position: absolute;
-  top: 100px;
   display: flex;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 .reservation__form {
@@ -289,7 +290,7 @@
   opacity: 70%;
 }
 
-.reservation__button--submit:enabled {
+.reservation__button-submit:enabled {
   background: #2f80ed;
   color: #ffffff;
 }
