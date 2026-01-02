@@ -1,0 +1,32 @@
+.nav {
+}
+
+.nav__logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  max-width: 105px;
+  max-height: 39px;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0; /* Remover padding padrão de ul */
+  margin: 0; /* Remover margem padrão de ul */
+  column-gap: 20px;
+}
+
+.nav__link {
+  position: absolute;
+  right: 80px;
+  top: 30px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}

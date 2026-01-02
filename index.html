@@ -19,7 +19,6 @@
       rel="stylesheet"
     />
     <title>Triple Espresso</title>
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="favicon.ico" />
   </head>
@@ -41,7 +40,7 @@
               <a class="nav__link" href="#reservation">Reservar uma mesa</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Contatos</a>
+              <a class="nav__link" href="footer">Contatos</a>
             </li>
           </ul>
         </nav>
@@ -93,7 +92,7 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <div class="caption">
+              <div class="recipes__caption">
                 <p class="recipes__caption-first-words">Receita Aeropress</p>
                 <p class="recipes__caption-last-words">~5 min</p>
               </div>
@@ -107,7 +106,7 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <div class="caption">
+              <div class="recipes__caption">
                 <p class="recipes__caption-first-words">
                   Receita de Prensa Francesa
                 </p>
@@ -182,7 +181,43 @@
           </form>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer" id="footer">
+        <div class="footer__content">
+          <img
+            src="/web_project_coffeeshop/images/logo_coffeeshop_light.svg"
+            alt="Logo da Triple Espresso"
+            class="footer__logo"
+          />
+          <div class="footer__circle"></div>
+
+          <div class="footer__social">
+            <h4 class="footer__social-heading">Mídia Social</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  <img
+                    src="/web_project_coffeeshop/images/facebook_white.svg"
+                    alt="Logo do Facebook"
+                    class="footer__social-icon"
+                  />
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">
+                  <img
+                    src="/web_project_coffeeshop/images/instagram_white.svg"
+                    alt="Logo do Instagram"
+                    class="footer__social-icon"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2025 Leonardo Dias Caumo</p>
+      </footer>
     </div>
   </body>
 </html>
