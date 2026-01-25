@@ -27,20 +27,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 720px;
-  max-height: 800px;
+  height: 800px;
   display: flex;
-  position: relative;
+  flex-direction: column;
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 80px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .nav__logo {
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  max-width: 105px;
-  max-height: 39px;
+  width: 105px;
+  height: 39px;
 }
 
 .nav__links {
@@ -51,34 +53,29 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  padding: 0; /* Remover padding padrão de ul */
-  margin: 0; /* Remover margem padrão de ul */
   column-gap: 20px;
 }
 
 .nav__link {
-  position: absolute;
-  right: 80px;
-  top: 30px;
   text-decoration: none;
   color: inherit;
   display: flex;
 }
 
 .header__image {
-  max-width: 646px;
-  max-height: 568px;
+  width: 646px;
+  height: 568px;
+  display: flex;
+  align-self: center;
   position: absolute;
   right: 5px;
   top: 124px;
-  display: flex;
 }
 
 .header__title {
-  position: absolute;
-  left: 80px;
-  top: 183px;
+  margin-top: 183px;
   max-width: 709px;
+  margin-left: 80px;
 }
 
 .header__title span {
@@ -113,37 +110,37 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  position: absolute;
-  left: 80px;
-  top: 350px;
+  margin-left: 80px;
 }
 
 .header__footer {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
 }
 
 .header__paragraph {
   list-style-type: none;
-  position: absolute;
-  left: 80px;
-  bottom: 40px;
   font-family: "Inter";
   font-size: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #838383;
+  margin: 0 auto;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .recipes {
   background-image: url(/web_project_coffeeshop/images/background_recipes.svg);
   background-color: #0a2750;
   background-size: cover;
-  position: relative;
-  height: 100vh;
   color: #ffffff;
-  display: flex;
   height: 858px;
+  display: flex;
+  flex-direction: column;
 }
 
 .recipes__title {
@@ -153,9 +150,6 @@
   font-size: 44px;
   line-height: 52px;
   max-width: 580px;
-  position: absolute;
-  left: 80px;
-  top: 100px;
 }
 
 .recipes__subtitle {
@@ -165,19 +159,16 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  position: absolute;
-  left: 80px;
-  top: 180px;
 }
 
 .recipes__videos {
   list-style-type: none;
   display: flex;
-  position: absolute;
-  left: 50%;
   transform: translateX(-50%);
   gap: 40px;
-  top: 325px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 215px;
 }
 
 .recipes__item {
@@ -190,7 +181,6 @@
   border: none;
   width: 480px;
   height: 273px;
-  display: block;
 }
 
 .recipes__caption {

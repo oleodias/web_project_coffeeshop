@@ -4,24 +4,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 720px;
-  max-height: 800px;
+  height: 800px;
   display: flex;
-  position: relative;
+  flex-direction: column;
 }
 
 .header__image {
-  max-width: 646px;
-  max-height: 568px;
+  width: 646px;
+  height: 568px;
+  display: flex;
+  align-self: center;
   position: absolute;
   right: 5px;
   top: 124px;
-  display: flex;
 }
 
 .header__title {
-  position: absolute;
-  left: 80px;
-  top: 183px;
+  margin-top: 183px;
   max-width: 709px;
 }
 
@@ -57,24 +56,26 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  position: absolute;
-  left: 80px;
-  top: 350px;
+  margin: 0 auto;
 }
 
 .header__footer {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+  margin-bottom: 40px;
 }
 
 .header__paragraph {
   list-style-type: none;
-  position: absolute;
-  left: 80px;
-  bottom: 40px;
   font-family: "Inter";
   font-size: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #838383;
+  margin: 0 auto;
+  margin-left: 80px;
+  margin-right: 80px;
 }
