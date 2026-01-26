@@ -34,12 +34,10 @@
 .recipes__videos {
   list-style-type: none;
   display: flex;
-  left: 50%;
-  transform: translateX(-50%);
   gap: 40px;
-  margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 215px;
+  justify-content: center;
 }
 
 .recipes__item {

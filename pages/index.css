@@ -164,11 +164,10 @@
 .recipes__videos {
   list-style-type: none;
   display: flex;
-  transform: translateX(-50%);
   gap: 40px;
-  margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 215px;
+  justify-content: center;
 }
 
 .recipes__item {
@@ -325,8 +324,8 @@
 .footer__content {
   padding: 60px 80px 0 80px;
   display: flex;
-  justify-content: space-between;
   position: relative;
+  justify-content: space-between;
 }
 
 .footer__logo {
@@ -348,6 +347,7 @@
 }
 
 .footer__social {
+  flex-direction: column;
 }
 
 .footer__social-heading {
@@ -356,12 +356,10 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 20px;
 }
 
 .footer__list {
   list-style-type: none;
-  column-gap: 16px;
 }
 
 .footer__list-item {
@@ -370,6 +368,8 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  gap: 10px;
+  padding: 0 0 16px 0;
 }
 
 .footer__list-link {
