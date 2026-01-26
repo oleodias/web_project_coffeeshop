@@ -11,6 +11,7 @@
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 120px;
+  z-index: 1;
 }
 
 .reservation__title {
