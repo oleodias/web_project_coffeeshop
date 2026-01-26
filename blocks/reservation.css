@@ -1,5 +1,5 @@
 .reservation {
-  background-image: url(/web_project_coffeeshop/images/background_reservation.svg);
+  background-image: url("/web_project_coffeeshop/images/background_reservation.svg");
   background-color: #d9e7ff;
   background-repeat: no-repeat;
   background-size: cover;
