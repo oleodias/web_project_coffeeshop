@@ -27,3 +27,7 @@
   color: inherit;
   display: flex;
 }
+
+.nav__link:hover {
+  color: #2f80ed; /* cor azul quando passar o mouse */
+}

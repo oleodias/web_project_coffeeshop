@@ -1,6 +1,6 @@
 .header {
   background-color: #ffffff;
-  background-image: url(/web_project_coffeeshop/images/background_header.svg);
+  background-image: url("/web_project_coffeeshop/images/background_header.svg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 720px;

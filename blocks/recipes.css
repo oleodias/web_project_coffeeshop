@@ -1,5 +1,5 @@
 .recipes {
-  background-image: url(/web_project_coffeeshop/images/background_recipes.svg);
+  background-image: url("/web_project_coffeeshop/images/background_recipes.svg");
   background-color: #0a2750;
   background-size: cover;
   height: 100vh;
