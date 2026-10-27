@@ -1,5 +1,15 @@
 # ☕ Triple Espresso - Coffee Shop
 
+## 📅 Sprints
+
+Projeto da **Sprint 4** do curso de Desenvolvimento Web da TripleTen Brasil.
+
+| Sprint | O que foi feito neste repositório |
+| --- | --- |
+| 4 | página da cafeteria: BEM Flat, formulário de reserva, vídeo com `iframe`, Google Fonts e estados `:hover` |
+
+---
+
 ## 📝 Descrição do Projeto
 O **Triple Espresso** é uma página web desenvolvida para uma cafeteria situada na biblioteca Triple Peaks. O objetivo do projeto é oferecer um ambiente digital aconchegante que reflita a experiência física do local, permitindo que estudantes e amantes de café consultem horários, aprendam novas receitas e façam reservas de mesas.
 
