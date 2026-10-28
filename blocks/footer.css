@@ -57,6 +57,14 @@
 .footer__list-link {
   text-decoration: none;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.2s ease;
+}
+
+.footer__list-link:hover {
+  opacity: 70%;
 }
 
 .footer__social-icon {
@@ -74,4 +82,41 @@
   left: 80px;
   padding-top: 108px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+  .footer__content {
+    padding: 60px 40px 0;
+  }
+
+  .footer__copyright {
+    left: 40px;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__content {
+    flex-direction: column;
+    row-gap: 40px;
+    padding: 48px 20px 0;
+  }
+
+  .footer__circle {
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    left: -60px;
+  }
+
+  .footer__list {
+    padding: 0;
+  }
+
+  .footer__copyright {
+    left: 20px;
+    margin: 0;
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
 }
