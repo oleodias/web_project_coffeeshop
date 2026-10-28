@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,7 +57,7 @@
         <img
           src="./images/inside_coffee_shop.png"
           class="header__image"
-          alt="Imagem da cafeteria"
+          alt="Ilustração do interior da cafeteria Triple Espresso"
         />
 
         <footer class="header__footer">
@@ -86,7 +86,8 @@
               <iframe
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=t9Dit_ycAKzfsuVp"
-                title="YouTube video player"
+                title="Vídeo: receita de café na Aeropress"
+                loading="lazy"
                 allow="
                   accelerometer;
                   autoplay;
@@ -98,7 +99,6 @@
                 "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
-                alt="Vídeo do Youtube"
               ></iframe>
               <div class="recipes__caption">
                 <p class="recipes__caption-first-words">Receita Aeropress</p>
@@ -109,7 +109,8 @@
               <iframe
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/st571DYYTR8?si=_9GHKzTRg5Du6lI9"
-                title="YouTube video player"
+                title="Vídeo: receita de café na prensa francesa"
+                loading="lazy"
                 allow="
                   accelerometer;
                   autoplay;
@@ -121,7 +122,6 @@
                 "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
-                alt="Vídeo do Youtube"
               ></iframe>
               <div class="recipes__caption">
                 <p class="recipes__caption-first-words">
@@ -133,7 +133,7 @@
           </ul>
         </section>
         <section class="reservation" id="reservation">
-          <h3 class="reservation__title">Reservar uma mesa</h3>
+          <h2 class="reservation__title">Reservar uma mesa</h2>
           <form class="reservation__form form">
             <div class="reservation__fieldset">
               <label class="reservation__label" for="name">Nome *</label>
@@ -164,7 +164,7 @@
                 >Data e hora *</label
               >
               <input
-                type="date"
+                type="datetime-local"
                 class="reservation__input"
                 required
                 id="datetime-local"
@@ -179,6 +179,13 @@
                 id="email"
               />
 
+              <label
+                class="reservation__label reservation__label_type_checkbox"
+              >
+                <input type="checkbox" class="reservation__checkbox" required />
+                Eu concordo com os termos de uso
+              </label>
+
               <div class="reservation__buttons">
                 <button
                   class="reservation__button reservation__button-submit"
@@ -187,13 +194,6 @@
                   Reservar uma mesa
                 </button>
               </div>
-
-              <label
-                class="reservation__label reservation__label_type_checkbox"
-              >
-                <input type="checkbox" class="reservation__checkbox" />
-                Eu concordo com os termos de uso
-              </label>
             </div>
           </form>
         </section>
@@ -208,7 +208,7 @@
           <div class="footer__circle"></div>
 
           <div class="footer__social">
-            <h4 class="footer__social-heading">Mídia Social</h4>
+            <h3 class="footer__social-heading">Mídia Social</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a class="footer__list-link" href="#">

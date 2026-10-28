@@ -21,6 +21,25 @@ O **Triple Espresso** é uma página web desenvolvida para uma cafeteria situada
 
 ---
 
+## 🔧 Melhorias depois da sprint
+
+Revisão feita depois da entrega, mantendo o HTML e o CSS puros e o padrão BEM
+Flat (cada media query fica no arquivo do próprio bloco).
+
+| O que mudou | Por quê |
+| --- | --- |
+| Fundos com caminho relativo (`../images/...`) | O caminho `/web_project_coffeeshop/images/...` só funcionava no GitHub Pages; aberto localmente, os círculos decorativos sumiam |
+| Ilustração do topo posicionada dentro da página | Em telas largas ela colava na borda da janela, fora do container de 1600px |
+| **Responsividade** de 320px a 1920px (pontos de quebra em 1439, 1200, 1024, 768 e 480px) | Antes, o `min-width: 1100px` gerava rolagem lateral no celular e a ilustração cobria o título abaixo de 1440px |
+| Vídeos em grade de uma coluna no celular, com proporção 16:9 | Os vídeos acompanham a largura da tela sem se sobrepor |
+| Campo "Data e hora" com `datetime-local` | O rótulo pedia data e hora, mas o campo só aceitava a data |
+| Termos de uso obrigatórios e antes do botão | O aceite precisa vir antes do envio |
+| `lang="pt-BR"`, títulos descritivos nos `iframe`, hierarquia `h1 → h2 → h3` | Acessibilidade para leitores de tela |
+| Foco visível no teclado, transições suaves no `:hover`, `cursor: pointer` no botão, rolagem suave que respeita `prefers-reduced-motion` | Acabamento e acessibilidade |
+| Espaçamento interno nos campos do formulário | O texto digitado encostava na borda |
+
+---
+
 ## 📈 Planos de Melhoria
 Abaixo, listo as funcionalidades e evoluções que planejei para este projeto, demonstrando uma visão de expansão técnica e de experiência do usuário:
 

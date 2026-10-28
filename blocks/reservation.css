@@ -1,5 +1,5 @@
 .reservation {
-  background-image: url("/web_project_coffeeshop/images/background_reservation.svg");
+  background-image: url("../images/background_reservation.svg");
   background-color: #d9e7ff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,12 +58,13 @@
   width: 100%;
   height: 60px;
   margin-bottom: 32px;
+  /* o texto digitado ganha o mesmo recuo que o placeholder tinha */
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .reservation__input::placeholder {
   color: #838383;
-  padding-left: 20px;
-  padding-top: 15px;
 }
 
 .reservation__buttons {
@@ -78,6 +79,10 @@
   border-radius: 4px;
   height: 60px;
   width: 100%;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  transition: opacity 0.2s ease;
 }
 
 .reservation__button:hover {
@@ -104,5 +109,44 @@
   display: flex;
   gap: 12px;
   justify-content: center;
-  margin-top: 32px;
+  align-items: center;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+/* abaixo de 1024px o formulário sai do posicionamento absoluto e flui na página */
+@media (max-width: 1024px) {
+  .reservation {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px 100px;
+  }
+
+  .reservation__title {
+    position: static;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  .reservation__form {
+    width: 100%;
+  }
+
+  .reservation__fieldset {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservation {
+    padding: 64px 20px 80px;
+  }
+
+  .reservation__title {
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 32px;
+  }
 }

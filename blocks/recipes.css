@@ -1,5 +1,5 @@
 .recipes {
-  background-image: url("/web_project_coffeeshop/images/background_recipes.svg");
+  background-image: url("../images/background_recipes.svg");
   background-color: #0a2750;
   background-size: cover;
   height: 100vh;
@@ -76,4 +76,73 @@
   line-height: 30px;
   margin-top: 24px;
   text-align: end;
+}
+
+@media (max-width: 1024px) {
+  .recipes {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .recipes__title,
+  .recipes__subtitle {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .recipes__videos {
+    flex-wrap: wrap;
+    padding: 0 40px;
+    margin-bottom: 0;
+  }
+}
+
+/* os vídeos ficam um embaixo do outro e acompanham a largura da tela */
+@media (max-width: 768px) {
+  /* grade de uma coluna: a altura de cada item segue a proporção 16:9 do vídeo */
+  .recipes__videos {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 48px;
+  }
+
+  .recipes__item {
+    display: block;
+  }
+
+  .recipes__iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipes {
+    padding-bottom: 64px;
+  }
+
+  .recipes__title {
+    font-size: 34px;
+    line-height: 42px;
+    margin: 64px 20px 0;
+  }
+
+  .recipes__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .recipes__videos {
+    padding: 0 20px;
+    gap: 32px;
+  }
+
+  .recipes__caption-first-words,
+  .recipes__caption-last-words {
+    font-size: 18px;
+    margin-top: 16px;
+  }
 }
