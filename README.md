@@ -1,5 +1,7 @@
 # ☕ Triple Espresso - Coffee Shop
 
+> 🎬 **Vídeo de demonstração (2,5 min):** https://drive.google.com/file/d/15G6V-YDL_qzR5w_pPoQ3OE8lR_0pmB8J/view · 🌐 **Site:** https://oleodias.github.io/web_project_coffeeshop/
+
 ## 📅 Sprints
 
 Projeto da **Sprint 4** do curso de Desenvolvimento Web da TripleTen Brasil.
